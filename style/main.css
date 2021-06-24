@@ -1,0 +1,558 @@
+:root{
+    --black-color: #000000;
+    --white-color: #ffffff;
+    --grey-color1: #f1f1f1;
+    --grey-color2: #cccccc;
+    --grey-color3: #656565;
+    --grey-color4: rgb(59, 59, 59);
+    --grey-color5: #757575;
+    --red-color: #f44336;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Oswald', sans-serif;
+}
+
+.clear{
+    clear: both;
+}
+
+.center{
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 2%;
+}
+
+.w50{
+    width: 50%;
+}
+
+.style-h1{
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.style-h2{
+    margin: 10px 0;
+    font-weight: 400;
+    margin-bottom: 20px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.style-span{
+    color: var(--grey-color5);
+    font-family: 'Oswald', sans-serif;
+}
+
+.title-rigth{
+    color: white;
+    font-size: 25px;
+    padding: 17px 15px;
+    font-weight: 400;
+    background-color: black;
+}
+/*HEADER----------------------------------*/
+
+header{
+    width: 100%;
+    height: auto;
+    background-color: var(--black-color);
+}
+
+.content-social{
+    padding: 16px 20px;
+    float: left;
+    cursor: pointer;
+}
+
+.content-social:hover{
+    background-color: var(--grey-color2);
+    
+}
+
+.content-social:hover .img-social{
+    filter: invert();
+}
+
+.img-social{
+    width: 16px;
+    height: 16px;
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+.content-lupa{
+    padding: 12px 15px;
+    float: right;
+    cursor: pointer;
+}
+
+.rigth{
+    float: right;
+}
+
+/*PROFILE-BANNER------------------------*/
+
+section.profile-banner{
+    text-align: center;
+    padding: 60px 0;
+}
+
+.profile-banner h1{
+    font-size: 60px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.profile-banner h6{
+    font-size: 21px;
+    font-weight: 400;
+}
+
+.profile-banner span{
+    font-family: 'Oswald', sans-serif;
+    font-size: 21px;
+    background-color: var(--black-color);
+    color: var(--white-color);
+    padding: 0 8px;
+}
+
+/*BANNER-----------------------------*/
+
+section.box-banner{
+    width: 100%;
+    padding-top: 67%;
+    position: relative;
+
+}
+
+.banner{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(../images/jane.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.title-banner{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.title-banner h2{
+    font-size: 45px;
+    color: var(--white-color);
+    font-weight: 400;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.title-banner h1{
+    font-size: 78px;
+    color: var(--white-color);
+    margin-bottom: 18px;
+}
+
+
+.title-banner input{
+    border: 0;
+    background-color: var(--grey-color1);
+    opacity: 0.60;
+    padding: 17px 34px;
+    cursor: pointer;
+    font-size: 23px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.title-banner input:hover{
+    opacity: 0.9;
+}
+
+/*SUBSCRIBE*/
+
+.box-subscribe{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding: 0 2%;
+    background-color: rgba(0, 0, 0, 0.397);
+    /* transition: 1s;    */
+    visibility: hidden;
+}
+
+div.subscribe {
+    position: relative;
+    background-color: var(--white-color);
+    padding: 35px 50px 50px 50px;
+    max-width: 900px;
+    margin: 0 auto;
+    top: 100px;
+}
+
+.subscribe h1{
+    float: left;
+    letter-spacing: 4px;
+    margin: 12px 0 15px 0;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.subscribe p{
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.subscribe input[type='email']{
+    width: 100%;
+    padding-left: 10px;
+    line-height: 35px;
+    font-size: 15px;
+    border: 1px solid var(--grey-color2);
+    margin-bottom: 15px;
+}
+
+.subscribe input[type='button']{
+    width: 100%;
+    text-align: center;
+    height: 43px;
+    cursor: pointer;
+    background-color: var(--red-color);
+    border: 0;
+    color: var(--white-color);
+    font-size: 14px;
+}
+
+.subscribe input[type='button']:hover{
+    background-color: var(--grey-color2);
+    color: var(--black-color);
+
+}
+
+
+.content-sair{
+    padding: 17px 19px;
+    float: right;
+    cursor: pointer;
+}
+
+.content-sair:hover{
+   background-color: var(--grey-color1);
+}
+
+.sair{
+    width: 20px;
+    height: 20px;
+    background-image: url(../icons/fechar-janela.png);
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+/*MAIN------------------------*/
+
+main{
+    width: 100%;
+    background-color: var(--grey-color1);
+    display: flex;
+}
+
+main .center{
+    padding: 2% 2.5%;
+}
+
+.flex-main{
+    display: flex;
+}
+
+.left-main{
+    width: 66%;
+    margin: 0 14px 0 0;
+}
+
+.right-main{
+    width: 34%;
+    margin: 0 0 0 14px;
+}
+
+/*HEADING-------------------------*/
+
+section.box-heading{
+    width: 100%;
+    padding: 22px 22px 0 22px;
+    background-color: var(--white-color);
+    margin-bottom: 50px;
+}
+
+.img-heading{
+    width: 100%;
+    padding-top: 63%;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 30px;
+}
+
+.box-heading p{
+    text-align: justify;
+    font-size: 15px;
+    line-height: 1.5;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.box-like{
+    float: left;
+    padding: 9px 18px;
+    border: 1px solid #ccc;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 30px;
+    background-color: var(--white-color);
+}
+
+
+.box-like:hover{
+    background-color: var(--grey-color2);
+}
+
+.flex-like{
+    display: flex;
+    align-items: center;
+}
+
+.img-like{
+    width: 15px;
+    height: 15px;
+    background-image: url(../icons/like.png);
+    background-position: center;
+    background-size: 100% 100%;
+    margin-right: 5px;
+}
+
+.box-replies{
+    float: right;
+    padding: 9px 18px;
+    text-align: center;
+    border: 0;
+    cursor: pointer;
+    margin: 30px 0 50px 0;
+    background-color: var(--black-color);
+    color: var(--white-color);
+    font-weight: bold;
+}
+
+.box-replies span{
+    padding: 2px 8px;
+    background-color: var(--white-color);
+    color: var(--black-color);
+    margin-left: 5px;
+}
+
+.box-replies:hover{
+    background-color: var(--grey-color2);
+    color: var(--black-color);
+}
+
+/*HEADING-REPLIES-----------------*/
+
+.content-replies{
+    display: none;
+    width: 100%;
+    border-top: 1px solid var(--grey-color1);
+    padding-top: 20px;
+    
+}
+
+.wraper-replies{
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px ;
+}
+
+.img-replies{
+    width: 90px ;
+    height: 110px;
+    background-color: red;
+    margin-right: 40px;
+    background-position: center;
+    background-size: 100% 100%;
+
+}
+
+.txt-replies p{
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+.title-replies{
+    font-size: 19px;
+    font-weight: bold;
+    color: var(--grey-color3);
+}
+
+.title-replies span{
+   color: var(--black-color); 
+}
+
+/*DESCRIPTION-------------------------------*/
+
+.box-description{
+    width: 100%;
+    margin-bottom: 50px;
+
+}
+
+.img-description{
+    width: 100%;
+    height: 280px;
+    background-image: url('../images/avatar_girl2.jpg');
+    background-position: center;
+    background-size: 100% 100%;
+    filter: grayscale(75%);
+}
+
+.msg-description{
+    padding: 13px 16px;
+    background-color: black;
+    color: white;
+}
+
+.msg-description h1{
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 25px;
+}
+
+.msg-description p{
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+
+/*POSTS------------------------------*/
+
+.box-posts{
+    width: 100%;
+    margin-bottom: 50px;
+    background-color: var(--white-color);
+}
+
+.content-posts{
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-top: 1px solid var(--grey-color2);
+
+}
+
+.content-posts:hover{
+    background-color: var(--grey-color2);
+}
+
+.img-posts{
+    width: 60px;
+    height: 70px;
+    background-position: center;
+    background-size: 100% 100%;
+    margin-right: 15px;
+}
+
+.msg-posts p{
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.msg-posts p:nth-last-of-type(2){
+    font-size: 21px;
+}
+
+
+/*ADVERTISE ------------------------*/
+
+.box-advertise{
+    width: 100%;
+    margin-bottom: 50px;
+    background-color: var(--white-color);
+}
+
+.content-advertise{
+    padding: 15px;
+}
+
+.wraper-advertise{
+    width: 100%;
+    height: 270px;
+    background-color: var(--grey-color1);
+    text-align: center;
+}
+
+.wraper-advertise p{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/*TAGS-------------------------------------*/
+
+.box-tags{
+    width: 100%;
+    background-color: var(--white-color);
+    margin-bottom: 50px;
+}
+
+.content-tags{
+    padding: 18px 15px;
+}
+
+.box-tags span.primary-span{
+    color: var(--white-color);
+    background-color: var(--black-color);
+    padding: 5px 13px;
+    font-size: 17px;
+}
+
+.box-tags p{
+    padding: 3px 10px;
+    background-color: var(--grey-color1);
+    display: inline-block;
+    margin-bottom: 25px;
+    font-size: 15px;
+}
+
+/*INSPIRATION---------------------------------*/
+
+.box-inspiration{
+    width: 100%;
+    margin-bottom: 50px;
+    background-color: var(--white-color);
+}
+
+.content-inspiration{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 1fr 1fr;
+   grid-gap: 20px;
+   padding: 20px;
+    
+}
+
+.img-inspiration{
+    width: 100%;
+    height: 160px;
+    background-position: center;
+    background-size: 100% 100%;
+}
